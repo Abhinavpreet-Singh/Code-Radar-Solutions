@@ -17,6 +17,6 @@ int countLeadingZeros(int num) {
 int main() {
     int num;
     scanf("%d", &num);
-    return num;
+    printf(num);
     return 0;
 }
