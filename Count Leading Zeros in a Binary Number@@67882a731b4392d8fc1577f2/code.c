@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int countLeadingZeros(int num) {
-    if (num == 0) return sizeof(int) * 8; 
+    if (num == 0) return sizeof(int) * 8;
 
     int count = 0;
-    int bits = sizeof(int) * 8; 
+    int bits = sizeof(int) * 8;
 
     for (int i = bits - 1; i >= 0; i--) {  
-        if ((num >> i) & 1) break; 
+        if ((num >> i) & 1) break;
         count++;
     }
 
@@ -17,6 +17,6 @@ int countLeadingZeros(int num) {
 int main() {
     int num;
     scanf("%d", &num);
-    printf(num);
+    printf("%d", countLeadingZeros(num));
     return 0;
 }
