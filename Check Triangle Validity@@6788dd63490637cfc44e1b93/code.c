@@ -5,15 +5,9 @@ int main() {
     scanf("%d %d %d", &a, &b, &c);
 
     if (a + b > c && b + c > a && c + a > b) {
-        if (a == b && a == c) {
-            printf("Equilateral");
-        } else if (a == b || b == c || c == a) {
-            printf("Isosceles");
-        } else {
-            printf("Scalene");
-        }
+       printf("valid")
     } else {
-        printf("Not a valid triangle");
+        printf("invalid");
     }
 
     return 0;
