@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int age, citizen;
-    scanf("%d %d",&age, &citizen);
-
-    if(age>18 && citizen==1){
+    int age;
+    scanf("%d",&age);
+    if(age>=60){
         printf("Eligible");
     }else{
         printf("Not Eligible");
